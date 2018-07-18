@@ -114,16 +114,16 @@ export default class Player extends Component {
       setTimeout(() => { this.seekOnPlay = null }, SEEK_ON_PLAY_EXPIRY)
       return
     }
-    if (amount > 0 && amount < 1) {
-      // Convert fraction to seconds based on duration
-      const duration = this.player.getDuration()
-      if (!duration) {
-        console.warn('ReactPlayer: could not seek using fraction – duration not yet available')
-        return
-      }
-      this.player.seekTo(duration * amount)
-      return
-    }
+//     if (amount > 0 && amount < 1) {
+//       // Convert fraction to seconds based on duration
+//       const duration = this.player.getDuration()
+//       if (!duration) {
+//         console.warn('ReactPlayer: could not seek using fraction – duration not yet available')
+//         return
+//       }
+//       this.player.seekTo(duration * amount)
+//       return
+//     }
     this.player.seekTo(amount)
   }
   onReady = () => {
