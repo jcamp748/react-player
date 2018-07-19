@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CookPete/react-player.git"
+    "url": "git+https://github.com/CookPete/react-player.git"
   },
   "keywords": [
     "react",
@@ -153,5 +153,8 @@
       "text",
       "html"
     ]
+  },
+  "directories": {
+    "test": "test"
   }
 }
